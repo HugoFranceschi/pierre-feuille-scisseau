@@ -2,10 +2,16 @@
 
 body {
 	margin: 0;
+	padding: 10px;
 	margin-top: 15px;
 	font-family: "Barlow Semi Condensed", serif;
 	background-color: rgba(31, 55, 87, 1);
+	
 }
+
+/* .game{
+	display: none;
+} */
 
 .margin-0 {
 	margin: 0;
@@ -14,16 +20,22 @@ body {
 .page-choit {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
 }
 
+.resultat{
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
 .score {
 	border: solid 1px white;
 	display: flex;
 	align-items: center;
 	padding: 10px 15px;
-	gap: 60px;
 	margin-bottom: 100px;
+	width: 65%;
+    justify-content: space-between;
+	border-radius: 5px;
 }
 .score h1 {
 	font-size: 21px;
@@ -37,7 +49,7 @@ body {
 	flex-direction: column;
 	align-items: center;
 	gap: 10px;
-	padding: 11px 35px;
+	padding: 11px 30px;
 }
 .victoir p {
 	color: rgba(42, 69, 194, 1);
@@ -48,6 +60,11 @@ h2 {
 
 .pierre-papier-scisseau {
 	position: relative;
+	margin-bottom: 100px;
+}
+.pierre-papier-scisseau div:hover{
+	border-radius: 50%;
+	border: solid 10px rgba(255, 255, 255, 0.363);
 }
 .pierre-papier-scisseau button {
 	background-color: white;
@@ -57,6 +74,13 @@ h2 {
 .papier {
 	display: flex;
 	justify-content: center;
+	position: absolute;
+	right: 66%;
+	bottom: 67%;
+}
+.papier:hover{
+	right: 61.5%;
+	bottom: 62%;
 }
 .papier button {
 	border-radius: 50%;
@@ -64,29 +88,38 @@ h2 {
 	display: flex;
 	justify-content: center;
 	padding: 13px 18px;
-	position: absolute;
-	right: 66%;
-	bottom: 66%;
+
 }
 
 .scisseau {
 	display: flex;
 	justify-content: center;
+	position: absolute;
+	left: 66%;
+	bottom: 68%;
+}
+.scisseau:hover{
+	left: 61.5%;
+	bottom: 63%;
 }
 .scisseau button {
 	border-radius: 50%;
 	border: solid 10px rgba(235, 159, 14, 1);
-	padding: 8px 8px;
+	padding: 8px;
 	display: flex;
 	justify-content: center;
-	position: absolute;
-	left: 65%;
-	bottom: 65%;
 }
 
 .pierre {
 	display: flex;
 	justify-content: center;
+	position: absolute;
+	top: 65%;
+	right: 23%;
+}
+.pierre:hover{
+	top: 60%;
+	right: 18.5%;
 }
 .pierre button {
 	border-radius: 50%;
@@ -94,10 +127,58 @@ h2 {
 	display: flex;
 	justify-content: center;
 	padding: 16px 17px;
-	position: absolute;
-	top: 65%;
 }
+
 .triangle {
 	position: relative;
 	left: 2%;
+}
+
+.regle{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+.button{
+	border: solid 1px white;
+	background-color: transparent;
+	color: white;
+	border-radius: 10px;
+	padding: 10px 0px;
+	width: 14vh;
+}
+.button:hover {
+	background: white;
+	color: rgba(31, 55, 87, 1);
+}
+
+@media screen and (min-width: 1367px){
+	.score{
+		width: 50%;
+	}
+
+	.papier button {
+		padding: 29px 33px;
+	}
+	.scisseau button {
+		padding: 26px;
+	}
+	.pierre button{
+        padding: 34px 35px;
+	}
+	.regle{
+		justify-content: flex-end;
+	}
+
+	.pierre {
+		right: 12%;
+	}
+	.pierre:hover{
+		right: 7.5%;
+	}
+
+	.button{
+		width: 21vh;
+	}
 }

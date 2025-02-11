@@ -1,0 +1,64 @@
+.pierre-papier-scisseau {
+    display: none;
+}
+
+.game{
+    width: 100%;
+}
+
+.choix{
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    position: relative;
+}
+.choix div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.choix img{
+    width: 20vh;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.victoir-defaite{
+    margin-bottom: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+.victoir-defaite h2{
+    color: white;
+}
+
+.blanc{
+    background: white;
+	color: rgba(31, 55, 87, 1);
+    width: 22vh;
+}
+.blanc:hover{
+    color: red;
+}
+
+@media screen and (min-width: 1367px){
+    .choix div{
+        flex-direction: column-reverse;
+    }
+    .victoir-defaite{
+        position: absolute;
+        top: 55%;
+        right: 0%;
+    }
+    .choix img{
+        width: 30vh;
+    }
+
+    .blanc{
+        width: 29vh;
+    }
+}

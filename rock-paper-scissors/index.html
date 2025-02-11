@@ -5,19 +5,22 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="game.css">
 	</head>
 	<body>
 		<main>
 			<div class="page-choit">
-				<div class="score">
-					<div class="text">
-						<h1 class="margin-0">ROCK</h1>
-						<h1 class="margin-0">PAPER</h1>
-						<h1 class="margin-0">SCISSORS</h1>
-					</div>
-					<div class="victoir">
-						<p class="margin-0">SCORE</p>
-						<h2 class="margin-0">0</h2>
+				<div class="resultat">
+					<div class="score">
+						<div class="text">
+							<h1 class="margin-0">ROCK</h1>
+							<h1 class="margin-0">PAPER</h1>
+							<h1 class="margin-0">SCISSORS</h1>
+						</div>
+						<div class="victoir">
+							<p class="margin-0">SCORE</p>
+							<h2 class="margin-0">0</h2>
+						</div>
 					</div>
 				</div>
 				<div class="pierre-papier-scisseau">
@@ -34,9 +37,27 @@
 						<button><img src="./asset/main-pierre.svg" alt="pierre" /></button>
 					</div>
 				</div>
-				<div class="regle">
-					<button><p class="margin-0">RULES</p></button>
+				<div class="game">
+					<div class="choix">
+						<div>
+							<img src="./asset/air.webp" alt="air">
+							<p>YOU PICKED</p>
+						</div>
+						<div>
+							<img src="./asset/air.webp" alt="air">
+							<p>THE HOUSE PICKED</p>
+						</div>
+					</div>	
+					<div class="victoir-defaite">
+						<h2>YOU WIN</h2>
+						<!-- <h2>YOU LOSE</h2> -->
+						 <button class="button blanc"><p class="margin-0">PLAY AGAIN</p></button>
+					</div>
 				</div>
+				<div class="regle">
+					<button class="button"><p class="margin-0">RULES</p></button>
+				</div>
+				<script src="index.js"></script>
 			</div>
 		</main>
 	</body>
