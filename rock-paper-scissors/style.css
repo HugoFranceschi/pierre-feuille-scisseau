@@ -9,10 +9,6 @@ body {
 	
 }
 
-/* .game{
-	display: none;
-} */
-
 .margin-0 {
 	margin: 0;
 }
@@ -59,8 +55,10 @@ h2 {
 }
 
 .pierre-papier-scisseau {
-	position: relative;
 	margin-bottom: 100px;
+	display: flex
+;
+    justify-content: center;
 }
 .pierre-papier-scisseau div:hover{
 	border-radius: 50%;
@@ -75,12 +73,12 @@ h2 {
 	display: flex;
 	justify-content: center;
 	position: absolute;
-	right: 66%;
-	bottom: 67%;
+    right: 56%;
+    bottom: 55%;
 }
 .papier:hover{
-	right: 61.5%;
-	bottom: 62%;
+    right: 55%;
+    bottom: 54%;
 }
 .papier button {
 	border-radius: 50%;
@@ -95,12 +93,12 @@ h2 {
 	display: flex;
 	justify-content: center;
 	position: absolute;
-	left: 66%;
-	bottom: 68%;
+    left: 56%;
+    bottom: 55%;
 }
 .scisseau:hover{
-	left: 61.5%;
-	bottom: 63%;
+    left: 55%;
+    bottom: 54%;
 }
 .scisseau button {
 	border-radius: 50%;
@@ -114,12 +112,10 @@ h2 {
 	display: flex;
 	justify-content: center;
 	position: absolute;
-	top: 65%;
-	right: 23%;
+	top: 56%;
 }
 .pierre:hover{
-	top: 60%;
-	right: 18.5%;
+	top: 54%;
 }
 .pierre button {
 	border-radius: 50%;
@@ -130,8 +126,8 @@ h2 {
 }
 
 .triangle {
-	position: relative;
 	left: 2%;
+	width: 35vh;
 }
 
 .regle{
@@ -171,14 +167,29 @@ h2 {
 		justify-content: flex-end;
 	}
 
-	.pierre {
-		right: 12%;
+	.papier {
+		right: 54%;
+		bottom: 53%;
 	}
-	.pierre:hover{
-		right: 7.5%;
+	.papier:hover{
+		right: 53%;
+		bottom: 52%;
+	}
+
+	.scisseau {
+		left: 54%;
+		bottom: 53%;
+	}
+	.scisseau:hover{
+		left: 53%;
+		bottom: 52%;
 	}
 
 	.button{
 		width: 21vh;
+	}
+
+	.triangle{
+		width: 43vh;
 	}
 }
